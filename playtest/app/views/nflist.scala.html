@@ -1,0 +1,37 @@
+@(myForm:Form[NotificationList.UserEmailBean])
+
+@import helper._
+@import helper.twitterBootstrap._
+
+
+@main("通達リスト") {
+
+    <h1>通達りすと</h1>
+    
+        <div class="pagination">
+            <div class="fill">
+                <div class="container">
+                    <dl>
+  <dt> First definition</dt>  <dd>  First explanation</dd>
+  <dt> Second definition</dt> <dd> Second explanation</dd>
+</dl>
+</div>
+</div>
+</div>
+
+    <table border="3" class="computers zebra-striped">
+	  <tr>
+	    <th>Column 1 Heading</th>
+	    <th>Column 2 Heading</th>
+	  </tr>
+	  <tr>
+	    <td>Row 1: Col 1</td>
+	    <td>Row 1: Col 2</td>
+	  </tr>
+	</table>
+
+    
+    @inputText(myForm("name"))
+    @myForm("email").value
+
+}

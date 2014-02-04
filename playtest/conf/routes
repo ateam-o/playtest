@@ -5,5 +5,11 @@
 # Home page
 GET     /                           controllers.Application.index
 
+GET     /nflist						controllers.NotificationList.index
+GET     /nfcreate					controllers.NotificationCreate.index
+GET     /nfdetails					controllers.NotificationDetails.index
+GET     /nfreply					controllers.NotificationReply.index
+GET     /nfreport					controllers.NotificationReport.index
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
